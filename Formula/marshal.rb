@@ -5,21 +5,21 @@
 class Marshal < Formula
   desc "Free, self-hosted process & fleet manager — an open alternative to PM2 / PM2 Plus"
   homepage "https://github.com/REDDE4D/marshal-pm"
-  version "0.8.0"
+  version "0.9.0"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/REDDE4D/marshal-pm/releases/download/v0.8.0/marshal_0.8.0_darwin_amd64.tar.gz"
-      sha256 "1ce0149927be8eb93ef1fc1a22120b828978236b7ef7104dcc26074daeacbd0c"
+      url "https://github.com/REDDE4D/marshal-pm/releases/download/v0.9.0/marshal_0.9.0_darwin_amd64.tar.gz"
+      sha256 "d9e53329d09660e15e8139373944bf9f4d95877e32e4e07e9cd7b513677a785e"
 
       define_method(:install) do
         bin.install "marshal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/REDDE4D/marshal-pm/releases/download/v0.8.0/marshal_0.8.0_darwin_arm64.tar.gz"
-      sha256 "332884aac628cebaaa550dfb5bfb314736cecdf8700db265ba5e53b83097b44c"
+      url "https://github.com/REDDE4D/marshal-pm/releases/download/v0.9.0/marshal_0.9.0_darwin_arm64.tar.gz"
+      sha256 "99174d33db5293aa7915d820806ec8461295a0dc7e8796c5594bf5601d771278"
 
       define_method(:install) do
         bin.install "marshal"
@@ -29,15 +29,15 @@ class Marshal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/REDDE4D/marshal-pm/releases/download/v0.8.0/marshal_0.8.0_linux_amd64.tar.gz"
-      sha256 "f1502a16896753634cce61e102b129d4479b777dd7a81e14749df5f320c65577"
+      url "https://github.com/REDDE4D/marshal-pm/releases/download/v0.9.0/marshal_0.9.0_linux_amd64.tar.gz"
+      sha256 "617724de03859e26d49b430bf04d76b679d3aa11bfb2a08577c51d13ed5764aa"
       define_method(:install) do
         bin.install "marshal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/REDDE4D/marshal-pm/releases/download/v0.8.0/marshal_0.8.0_linux_arm64.tar.gz"
-      sha256 "6712a0dbff5d06bb141a43ab6d41881fefc82d87913b2680d1f607b679b89ff2"
+      url "https://github.com/REDDE4D/marshal-pm/releases/download/v0.9.0/marshal_0.9.0_linux_arm64.tar.gz"
+      sha256 "c027e410a0397de4bf1d094a9e34a9ef418d707d85dbd798f41440c13aa11d71"
       define_method(:install) do
         bin.install "marshal"
       end
